@@ -77,39 +77,28 @@
     .statistics h3, .statistics p {
         color: white;
     }
-
-
-      body {
-         padding-top: 20px;
-         padding-bottom: 40px;
-      }
-      .container {
-         width: 960px;
-      }
-      p.lead {
-         padding-top: 15px;
-      }
-      .navigation, .pitch, .section1, .section2, .faq, .footer {
-        padding: 10px 0px 10px 0px;
-      }
-      .video, .thermometer, .order, .social {
-        border: 1px dotted;
+    
+    /* Marketing copy and Footer */
+    .copy {
+        padding-top: 2.5%;
+        padding-bottom: 2.5%;
+        text-align: justify;
+    }
+    .asset {
+        padding: 2.5% 0%;
+    }
+    .footer {
+        color: #cccccc;
         text-align: center;
-      }
-      .video {
-        /* Internal borders have 1px width, this need to add 4 x 1 px to 120px. */
-        height: 124px;
-        line-heigth: 124px;
-      }
-      .thermometer, .order, .social {
-        /* line-height to vertically center: http://phrogz.net/css/vertical-align/index.html */
-        height: 40px;
-        line-height: 40px;
-      }
-      div.row {
-        border: 1px solid;
-      }
-      </style>
+    }
+    .footer p {
+        font-size: 11px;
+    }
+    .footer a {
+        color: #ccccff;
+    }
+
+  </style>
     </head>
     <body>
         <!-- Mobile-friendly navbar adapted from example. -->
@@ -194,16 +183,17 @@
             </div>
         </div>
         <!-- Beyond this part the marketing copy begins. -->
-        <div class="row section1">
-            <div class="span12">
-                Marketing Section 1
+        <div class="row-fluid section1">
+            <div class="span5 offset1 asset">
+                <img class="img-polaroid" src="http://placehold.it/480x300">
             </div>
         </div>
-        <div class="row section2">
-            <div class="span12">
+        <div class="span5 copy">
+            <p>
                 Marketing Section 2
-            </div>
+            </p>
         </div>
+    </div>
         <div class="row faq">
             <div class="span12">
                 FAQ
